@@ -2,24 +2,95 @@
 
 // Player data
 
-let joeSmith: [String: String] = ["name": "Joe Smith", "height": "42", "soccerExp": "YES", "guardianName": "Jim and Jan Smith"]
-let jillTanner: [String: String] = ["name": "Jill Tanner", "height": "36", "soccerExp": "YES", "guardianName": "Clara Tanner"]
-let billBon: [String: String] = ["name": "Bill Bon", "height": "43", "soccerExp": "YES", "guardianName": "Sara and Jenny Bon"]
-let evaGordon: [String: String] = ["name": "Eva Gordon", "height": "45", "soccerExp": "NO", "guardianName": "Wendy and Mike Gordon"]
-let mattGill: [String: String] = ["name": "Matt Gill", "height": "40", "soccerExp": "NO", "guardianName": "Charles and Sylvia Gill"]
-let kimmyStein: [String: String] = ["name": "Kimmy Stein", "height": "41", "soccerExp": "NO", "guardianName": "Bill and Hillary Stein"]
-let sammyAdams: [String: String] = ["name": "Sammy Adams", "height": "45", "soccerExp": "NO", "guardianName": "Jeff Adams"]
-let karlSaygan: [String: String] = ["name": "Karl Saygan", "height": "42", "soccerExp": "YES", "guardianName": "Heather Bledsoe"]
-let suzaneGreenberg: [String: String] = ["name": "Suzane Greenberg", "height": "44", "soccerExp": "YES", "guardianName": "Henrietta Dumas"]
-let salDali: [String: String] = ["name": "Sal Dali", "height": "41", "soccerExp": "NO", "guardianName": "Gala Dali"]
-let joeKavalier: [String: String] = ["name": "Joe Kavalier", "height": "39", "soccerExp": "NO", "guardianName": "Sam and Elaine Kavalier"]
-let benFinkelstein: [String: String] = ["name": "Ben Finkelstein", "height": "44", "soccerExp": "NO", "guardianName": "Aaron and Jill Finkelstein"]
-let diegoSoto: [String: String] = ["name": "Diego Soto", "height": "41", "soccerExp": "YES", "guardianName": "Robin and Sarika Soto"]
-let chloeAlaska: [String: String] = ["name": "Chloe Alaska", "height": "47", "soccerExp": "NO", "guardianName": "David and Jamie Alaska"]
-let arnoldWillis: [String: String] = ["name": "Arnold Willis", "height": "43", "soccerExp": "NO", "guardianName": "Claire Willis"]
-let phillipHelm: [String: String] = ["name": "Phillip Helm", "height": "44", "soccerExp": "YES", "guardianName": "Thomas Helm and Eva Jones"]
-let lesClay: [String: String] = ["name": "Les Clay", "height": "42", "soccerExp": "YES", "guardianName": "Wynonna Brown"]
-let herschelKrustofski: [String: String] = ["name": "Herschel Krustofski", "height": "45", "soccerExp": "YES", "guardianName": "Hyman and Rachel Krustofski"]
+let joeSmith: [String: String] = ["name": "Joe Smith",
+                                  "height": "42",
+                                  "soccerExp": "YES",
+                                  "guardianName": "Jim and Jan Smith"]
+
+let jillTanner: [String: String] = ["name": "Jill Tanner",
+                                    "height": "36",
+                                    "soccerExp": "YES",
+                                    "guardianName": "Clara Tanner"]
+
+let billBon: [String: String] = ["name": "Bill Bon",
+                                 "height": "43",
+                                 "soccerExp": "YES",
+                                 "guardianName": "Sara and Jenny Bon"]
+
+let evaGordon: [String: String] = ["name": "Eva Gordon",
+                                   "height": "45",
+                                   "soccerExp": "NO",
+                                   "guardianName": "Wendy and Mike Gordon"]
+
+let mattGill: [String: String] = ["name": "Matt Gill",
+                                  "height": "40",
+                                  "soccerExp": "NO",
+                                  "guardianName": "Charles and Sylvia Gill"]
+
+let kimmyStein: [String: String] = ["name": "Kimmy Stein",
+                                    "height": "41",
+                                    "soccerExp": "NO",
+                                    "guardianName": "Bill and Hillary Stein"]
+
+let sammyAdams: [String: String] = ["name": "Sammy Adams",
+                                    "height": "45",
+                                    "soccerExp": "NO",
+                                    "guardianName": "Jeff Adams"]
+
+let karlSaygan: [String: String] = ["name": "Karl Saygan",
+                                    "height": "42",
+                                    "soccerExp": "YES",
+                                    "guardianName": "Heather Bledsoe"]
+
+let suzaneGreenberg: [String: String] = ["name": "Suzane Greenberg",
+                                         "height": "44",
+                                         "soccerExp": "YES",
+                                         "guardianName": "Henrietta Dumas"]
+
+let salDali: [String: String] = ["name": "Sal Dali",
+                                 "height": "41",
+                                 "soccerExp": "NO",
+                                 "guardianName": "Gala Dali"]
+
+let joeKavalier: [String: String] = ["name": "Joe Kavalier",
+                                     "height": "39",
+                                     "soccerExp": "NO",
+                                     "guardianName": "Sam and Elaine Kavalier"]
+
+let benFinkelstein: [String: String] = ["name": "Ben Finkelstein",
+                                        "height": "44",
+                                        "soccerExp": "NO",
+                                        "guardianName": "Aaron and Jill Finkelstein"]
+
+let diegoSoto: [String: String] = ["name": "Diego Soto",
+                                   "height": "41",
+                                   "soccerExp": "YES",
+                                   "guardianName": "Robin and Sarika Soto"]
+
+let chloeAlaska: [String: String] = ["name": "Chloe Alaska",
+                                     "height": "47",
+                                     "soccerExp": "NO",
+                                     "guardianName": "David and Jamie Alaska"]
+
+let arnoldWillis: [String: String] = ["name": "Arnold Willis",
+                                      "height": "43",
+                                      "soccerExp": "NO",
+                                      "guardianName": "Claire Willis"]
+
+let phillipHelm: [String: String] = ["name": "Phillip Helm",
+                                     "height": "44",
+                                     "soccerExp": "YES",
+                                     "guardianName": "Thomas Helm and Eva Jones"]
+
+let lesClay: [String: String] = ["name": "Les Clay",
+                                 "height": "42",
+                                 "soccerExp": "YES",
+                                 "guardianName": "Wynonna Brown"]
+
+let herschelKrustofski: [String: String] = ["name": "Herschel Krustofski",
+                                            "height": "45",
+                                            "soccerExp": "YES",
+                                            "guardianName": "Hyman and Rachel Krustofski"]
 
 // Creating collection of all players
 
@@ -33,11 +104,11 @@ var nonExpTeam = [[String: String]]()
 var teamDragons: [[String: String]] = []
 var teamSharks: [[String: String]] = []
 var teamRaptors: [[String: String]] = []
-var numberOfTeams = 3
+
 
 var playerHeights: [[String: String]]
 
-playerHeights = players.sorted { $0["height"]! < $1["height"]! }
+playerHeights = players.sorted(by: {$0["height"]! < $1["height"]!})
 
 // Sorting into experienced and non-experienced
 
@@ -102,7 +173,7 @@ for letter in letters {
 
 // Logic for average height within teams
 
-
+playerHeights
 
 
 
