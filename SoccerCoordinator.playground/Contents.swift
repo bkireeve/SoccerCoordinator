@@ -173,11 +173,43 @@ for letter in letters {
 
 // Logic for average height within teams
 
-playerHeights
+func calculateAverageHeight(team: [[String: String]]) -> Double {
+    var totalHeight = 0.0
+    
+    for player in team {
+        totalHeight = totalHeight + Double(player["height"]!)!
+        
+    }
+    
+    return totalHeight / Double(team.count)
+}
 
+// Printing average height
+print(calculateAverageHeight(team: teamDragons))
+print(calculateAverageHeight(team: teamSharks))
+print(calculateAverageHeight(team: teamRaptors))
 
+//Difference between teams
 
+func calculateDifferenceInHeight(team1: Double, team2: Double) -> Bool {
+    var height = 0.0
+    var withinRange = false
+    
+    height = team1 - team2
+    
+    if height > 1.5 || height < -1.5 {
+        withinRange = false
+    } else {
+        withinRange = true
+    }
+    
+    return withinRange
+    
+}
 
+calculateDifferenceInHeight(team1: calculateAverageHeight(team: teamDragons), team2: calculateAverageHeight(team: teamSharks))
+calculateDifferenceInHeight(team1: calculateAverageHeight(team: teamDragons), team2: calculateAverageHeight(team: teamRaptors))
+calculateDifferenceInHeight(team1: calculateAverageHeight(team: teamRaptors), team2: calculateAverageHeight(team: teamSharks))
 
 
 
